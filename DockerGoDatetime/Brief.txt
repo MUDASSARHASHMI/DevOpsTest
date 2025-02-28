@@ -1,0 +1,13 @@
+Steps to test it on Ubuntu/Centos/RHEL.
+
+1. mkdir devopstest
+2. cd devopstest
+3. nano Dockerfile
+4. Paste the content from attached Dockerfile
+5. nano main.go.
+6. Paste main.go content in the file. 
+7. Docker build -t datetime .
+8. After image build check the images as shown in picture.
+9. Run the docker image like "docker run -p 8080:8080 datetime" shown in picture 
+10. Open the browser and test it with url "http://localhost:8080/time
+11. Open a new terminal tab and test it with "curl http://localhost:8080/time
